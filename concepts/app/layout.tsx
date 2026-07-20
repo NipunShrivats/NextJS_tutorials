@@ -34,6 +34,8 @@ export default function RootLayout({
             <Link href={"/"}>Home</Link>
             <Link href={"/products"}>Products</Link>
             <Link href={"/dashboard"}>Dashboard</Link>
+            <Link href={"/catch_all_routes"}>Catch All</Link>
+            <Link href={"/optional_catch_all_routes"}>Catch All Optional</Link>
           </nav>
         </header>
         {children}
