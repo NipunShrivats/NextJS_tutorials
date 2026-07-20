@@ -32,6 +32,7 @@ export default function RootLayout({
         <header>
           <nav className="flex gap-4">
             <Link href={"/"}>Home</Link>
+            <Link href={"/profile"}>Profile</Link>
             <Link href={"/products"}>Products</Link>
             <Link href={"/dashboard"}>Dashboard</Link>
             <Link href={"/catch_all_routes"}>Catch All</Link>
