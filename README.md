@@ -1,1 +1,4 @@
-nextjs
+# Next app 
+```
+npx create-next-app@latest ./
+```
