@@ -1,5 +1,8 @@
 import React from "react";
 
+// default - fetch() caches responses automatically
+// cache-> reload, no-store, force-cache
+
 interface products {
   id: number;
   title: string;
@@ -12,7 +15,11 @@ interface productResponse {
 }
 
 async function getProducts(): Promise<productResponse> {
-  const response = await fetch("https://dummyjson.com/products");
+  const response = await fetch("https://dummyjson.com/products", {
+    // cache: "no-store", //never caches ur response, always fetches fresh
+    // cache: "force-cache",
+    cache: "reload",
+  });
   if (!response.ok) {
     throw new Error("Failed to fetch products");
   }
